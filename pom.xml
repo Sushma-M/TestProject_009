@@ -13,6 +13,13 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
+                <directory>services/googleapis/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
                 <directory>services/securityService/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
@@ -96,6 +103,7 @@
                         </goals>
                         <configuration>
                             <sources>
+                                <source>services/googleapis/src</source>
                                 <source>services/securityService/src</source>
                             </sources>
                         </configuration>

@@ -3,7 +3,19 @@
     <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
     <wm-content name="content">
         <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
-        <wm-page-content columnwidth="8" paddingleft="15" paddingright="15" name="mainContent">
+        <wm-page-content columnwidth="8" name="mainContent" padding="unset 15px">
+            <wm-grid title="" dataset="bind:Variables.GoogleapisInvoke.dataSet" navigation="Basic" name="grid1">
+                <wm-grid-column binding="status" caption="Status" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
+                <wm-grid-column binding="route.summary" caption="Route Summary" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
+                <wm-grid-column binding="route.copyrights" caption="Route Copyrights" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
+                <wm-grid-column binding="route.bounds.southwest.lng" caption="Route.bounds.southwest Lng" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
+                <wm-grid-column binding="route.bounds.southwest.lat" caption="Route.bounds.southwest Lat" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
+                <wm-grid-column binding="route.bounds.northeast.lng" caption="Route.bounds.northeast Lng" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
+                <wm-grid-column binding="route.bounds.northeast.lat" caption="Route.bounds.northeast Lat" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
+                <wm-grid-column binding="route.leg.start_address" caption="Route.leg Start Address" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
+                <wm-grid-column binding="route.leg.end_address" caption="Route.leg End Address" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
+                <wm-grid-column binding="route.leg.distance.text" caption="Route.leg.distance Text" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
+            </wm-grid>
         </wm-page-content>
         <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
     </wm-content>
